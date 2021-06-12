@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -12,7 +12,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -21,7 +21,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -31,27 +31,33 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 4,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "<function flask.scaffold.Scaffold.route.<locals>.decorator(f:Callable) -> Callable>"
-      ]
-     },
-     "execution_count": 7,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
-    "app.route(\"/\")"
+    "app.route(\"/\")\n",
+    "def index():\n",
+    "    mars_file - mongo.db.mars_file.find_one()\n",
+    "    return render_template(\"index.html\", mars=mars_file)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "app.route(\"/scrape\")\n",
+    "def scrape():\n",
+    "    mars_file = mongo.db.mars_file\n",
+    "    mars_scrp = scrape_mars.scrape()\n",
+    "    mars_file.update({}, mars_scrp, upsert=True)\n",
+    "    return 'Done'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
    "metadata": {},
    "outputs": [
     {
