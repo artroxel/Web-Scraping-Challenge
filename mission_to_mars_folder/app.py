@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -12,7 +12,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -21,7 +21,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -31,7 +31,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
@@ -40,7 +40,7 @@
        "<function flask.scaffold.Scaffold.route.<locals>.decorator(f:Callable) -> Callable>"
       ]
      },
-     "execution_count": 7,
+     "execution_count": 12,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -51,7 +51,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": 13,
    "metadata": {},
    "outputs": [
     {
@@ -79,14 +79,6 @@
      "traceback": [
       "An exception has occurred, use %tb to see the full traceback.\n",
       "\u001b[1;31mSystemExit\u001b[0m\u001b[1;31m:\u001b[0m 1\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "C:\\Users\\amand\\anaconda3\\envs\\PythonData\\lib\\site-packages\\IPython\\core\\interactiveshell.py:3351: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.\n",
-      "  warn(\"To exit: use 'exit', 'quit', or Ctrl-D.\", stacklevel=1)\n"
      ]
     }
    ],
